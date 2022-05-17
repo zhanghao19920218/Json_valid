@@ -1,0 +1,66 @@
+{
+  "results": {
+    "evalution": {
+      "except_info": 80,
+      "reject_type": 0,
+      "total_score": 0.0,
+      "accuracy_score": 0.0,
+      "beg_pos": 0,
+      "is_rejected": false,
+      "end_pos": 16,
+      "content": "hello",
+      "standard_score": 5.0,
+      "fluency_score": 5.0,
+      "word_count": 5,
+      "words_per_min": 1
+    },
+    "detail": [
+      {
+        "sentence_detail": [
+          {
+            "content": "hello",
+            "index": 0,
+            "beg_pos": 0,
+            "end_pos": 16,
+            "total_score": 0.0,
+            "standard_score": 5.0,
+            "fluency_score": 5.0,
+            "word_count": 5,
+            "word_detail": [
+              {
+                "total_score": 0.0,
+                "content": "hello",
+                "beg_pos": 0,
+                "index": 0,
+                "end_pos": 0,
+                "dp_message": 31,
+                "global_index": 0,
+                "property": 0,
+                "syllable_detail": [
+                  {
+                    "syll_score": 0.0,
+                    "serr_msg": 0,
+                    "content": "hh ax",
+                    "beg_pos": 0,
+                    "end_pos": 0,
+                    "syll_accent": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tracking": {
+      "tracking_infos": [{
+
+      }]
+    }
+  },
+  "description": {
+    "lan": "cn",
+    "type": "study",
+    "version": "1"
+  }
+}
