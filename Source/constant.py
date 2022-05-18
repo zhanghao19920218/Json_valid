@@ -11,4 +11,4 @@ import os
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))  # This is your Project Root
 
-CONFIG_FILE_PATH: str = os.path.join(ROOT_DIR, "..", "config.yaml")  # config file path
+CONFIG_FILE_PATH: str = os.path.join(ROOT_DIR, "..", "config.json")  # config file path

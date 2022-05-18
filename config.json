@@ -1,0 +1,370 @@
+{
+  "results": {
+    "j_type": "object",
+    "required": 1,
+    "j_value": {
+      "evalution": {
+        "j_type": "object",
+        "required": 1,
+        "j_value": {
+          "total_score": {
+            "required": 1,
+            "j_type": "number",
+            "max": 5,
+            "min": 0
+          },
+          "except_info": {
+            "required": 1,
+            "j_type": "integer"
+          },
+          "reject_type": {
+            "required": 1,
+            "j_type": "integer"
+          },
+          "accuracy_score": {
+            "required": 1,
+            "j_type": "number",
+            "max": 5,
+            "min": 0
+          },
+          "beg_pos": {
+            "required": 1,
+            "j_type": "integer"
+          },
+          "end_pos": {
+            "required": 1,
+            "j_type": "integer"
+          },
+          "is_rejected": {
+            "required": 1,
+            "j_type": "boolean"
+          },
+          "content": {
+            "required": 1,
+            "j_type": "string"
+          },
+          "standard_score": {
+            "required": 1,
+            "j_type": "number",
+            "max": 5,
+            "min": 0
+          },
+          "fluency_score": {
+            "required": 1,
+            "j_type": "number",
+            "max": 5,
+            "min": 0
+          },
+          "word_count": {
+            "required": 1,
+            "j_type": "integer"
+          },
+          "words_per_min": {
+            "required": 1,
+            "j_type": "number"
+          },
+          "improper_cnt": {
+            "required": 0,
+            "j_type": "number"
+          },
+          "continus_deduct_score": {
+            "required": 0,
+            "j_type": "number"
+          },
+          "rising_tone_deduct_score": {
+            "required": 0,
+            "j_type": "number"
+          },
+          "skill_deduct_score": {
+            "required": 0,
+            "j_type": "number"
+          },
+          "stress_deduct_score": {
+            "required": 0,
+            "j_type": "number"
+          }
+        }
+      },
+      "detail": {
+        "j_type": "array",
+        "required": 0,
+        "j_value": {
+          "sentence_detail": {
+            "j_type": "array",
+            "required": 0,
+            "j_value": {
+              "content": {
+                "j_type": "string",
+                "required": 1
+              },
+              "index": {
+                "j_type": "integer",
+                "required": 1,
+                "min": 0
+              },
+              "beg_pos": {
+                "j_type": "integer",
+                "required": 1,
+                "min": 0
+              },
+              "end_pos": {
+                "j_type": "integer",
+                "required": 1,
+                "min": 0
+              },
+              "total_score": {
+                "j_type": "number",
+                "required": 1,
+                "min": 0,
+                "max": 5
+              },
+              "standard_score": {
+                "j_type": "number",
+                "required": 1,
+                "min": 0,
+                "max": 5
+              },
+              "fluency_score": {
+                "j_type": "number",
+                "required": 1,
+                "min": 0,
+                "max": 5
+              },
+              "word_count": {
+                "j_type": "integer",
+                "required": 1
+              },
+              "word_detail": {
+                "j_type": "array",
+                "required": 0,
+                "j_value": {
+                  "total_score": {
+                    "j_type": "number",
+                    "required": 1,
+                    "min": 0,
+                    "max": 5
+                  },
+                  "content": {
+                    "j_type": "string",
+                    "required": 1
+                  },
+                  "index": {
+                    "j_type": "integer",
+                    "required": 1,
+                    "min": 0
+                  },
+                  "global_index": {
+                    "j_type": "integer",
+                    "required": 1,
+                    "min": 0
+                  },
+                  "beg_pos": {
+                    "j_type": "integer",
+                    "required": 1,
+                    "min": 0
+                  },
+                  "end_pos": {
+                    "j_type": "integer",
+                    "required": 1,
+                    "min": 0
+                  },
+                  "property": {
+                    "j_type": "integer",
+                    "required": 1
+                  },
+                  "dp_message": {
+                    "j_type": "integer",
+                    "required": 1,
+                    "range": [
+                      0,
+                      16,
+                      32,
+                      64,
+                      128
+                    ]
+                  },
+                  "werr_msg": {
+                    "j_type": "integer",
+                    "required": 0
+                  },
+                  "syllable_detail": {
+                    "j_type": "array",
+                    "required": 0,
+                    "j_value": {
+                      "content": {
+                        "j_type": "string",
+                        "required": 1
+                      },
+                      "beg_pos": {
+                        "j_type": "integer",
+                        "required": 1,
+                        "min": 0
+                      },
+                      "end_pos": {
+                        "j_type": "integer",
+                        "required": 1,
+                        "min": 0
+                      },
+                      "syll_accent": {
+                        "j_type": "integer",
+                        "required": 1,
+                        "range": [
+                          0,
+                          1,
+                          2
+                        ]
+                      },
+                      "serr_msg": {
+                        "j_type": "integer",
+                        "required": 0,
+                        "range": [
+                          0,
+                          1,
+                          2
+                        ]
+                      },
+                      "syll_score": {
+                        "j_type": "number",
+                        "required": 1,
+                        "min": 0,
+                        "max": 5
+                      },
+                      "phone_detail": {
+                        "j_type": "array",
+                        "required": 0,
+                        "j_value": {
+                          "content": {
+                            "j_type": "string",
+                            "required": 1
+                          },
+                          "beg_pos": {
+                            "j_type": "integer",
+                            "required": 1,
+                            "min": 0
+                          },
+                          "end_pos": {
+                            "j_type": "integer",
+                            "required": 1,
+                            "min": 0
+                          },
+                          "gwpp": {
+                            "j_type": "number",
+                            "required": 1
+                          },
+                          "first_best": {
+                            "j_type": "string",
+                            "required": 1
+                          },
+                          "first_best_noself": {
+                            "j_type": "string",
+                            "required": 1
+                          },
+                          "perr_msg": {
+                            "j_type": "string",
+                            "required": 0
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tracking": {
+        "j_type": "object",
+        "required": 1,
+        "j_value": {
+          "tracking_infos": {
+            "j_type": "array",
+            "required": 1,
+            "j_value": {
+              "type": {
+                "j_type": "integer",
+                "required": 1,
+                "range": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7
+                ]
+              },
+              "index": {
+                "j_type": "integer",
+                "required": 1
+              },
+              "status": {
+                "j_type": "integer",
+                "required": 1,
+                "range": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              "start": {
+                "j_type": "integer",
+                "required": 1
+              },
+              "end": {
+                "j_type": "integer",
+                "required": 1
+              },
+              "evalution": {
+                "j_type": "object",
+                "required": 1,
+                "j_value": {
+                  "overall_score": {
+                    "j_type": "number",
+                    "required": 1
+                  },
+                  "fluency_score": {
+                    "j_type": "number",
+                    "required": 1
+                  },
+                  "accuarcy_score": {
+                    "j_type": "number",
+                    "required": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "description": {
+    "j_type": "object",
+    "required": 1,
+    "j_value": {
+      "lan": {
+        "required": 1,
+        "j_type": "string",
+        "range": [
+          "en",
+          "cn"
+        ]
+      },
+      "type": {
+        "required": 1,
+        "j_type": "string",
+        "range": [
+          "study"
+        ]
+      },
+      "version": {
+        "required": 1,
+        "j_type": "string",
+        "min": 1
+      }
+    }
+  }
+}
