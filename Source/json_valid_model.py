@@ -54,8 +54,8 @@ class JsonValidModel(object):
             json_str = json.load(json_file)
             ret = read_config()
             validator = jsonschema.Draft7Validator(ret)
-            errors = list(validator.iter_errors(json_str))
-            if len(errors) > 0:
+            errors = sorted(validator.iter_errors(json_str), key=str)
+            if len(list(errors)) > 0:
                 raise JsonError(error_type=JsonErrorType.JsonSchemaError,
                                 error_valid_lst=errors)
 

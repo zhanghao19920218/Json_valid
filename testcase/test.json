@@ -9,7 +9,7 @@
       "is_rejected": false,
       "end_pos": 16,
       "content": "hello",
-      "standard_score": 5.0,
+      "standard_score": 1.0,
       "fluency_score": 5.0,
       "word_count": 5,
       "words_per_min": 1
@@ -61,6 +61,6 @@
   "description": {
     "lan": "cn",
     "type": "study",
-    "version": "1"
+    "version": ""
   }
 }
