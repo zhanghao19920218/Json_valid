@@ -8,7 +8,7 @@
 @Description: JSON Error to handle message
 """
 from enum import Enum
-from typing import Any
+from typing import Any, List
 
 
 class JsonErrorType(Enum):
@@ -29,6 +29,22 @@ class BaseError(Exception):
     _error_type: JsonErrorType = JsonErrorType.GenerateError
 
     _error_valid_lst = None
+
+
+def error_path_concat(arr_param: List[str]) -> str:
+    """
+    concat string arr to path
+    :param arr_param:
+    :return:
+    """
+    for index, path_item in enumerate(arr_param):
+        if isinstance(path_item, int):
+            # if is an integer, must be an array type of json, replace to [{}]
+            temp_path: str = f"[{path_item}]"
+            arr_param[index] = temp_path
+    ret: str = "/".join(arr_param).replace("/[", "[")
+    return ret
+
 
 
 class JsonError(BaseError):
@@ -68,10 +84,10 @@ class JsonError(BaseError):
             return "JSON File Not Found"
         else:
             for error in self._error_valid_lst:
-                ret += f"错误位置:{list(error.absolute_path)}\n错误信息:{error.message}\n\n"
+                ret += f"错误位置:{error_path_concat(arr_param=error.absolute_path)}\n错误信息:{error.message}\n\n"
         return ret
 
-    def count_errors_type(self) :
+    def count_errors_type(self):
         """
         Counting the errors type
         :return:

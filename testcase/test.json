@@ -28,7 +28,7 @@
             "word_count": 5,
             "word_detail": [
               {
-                "total_score": 0.0,
+                "total_score": 10.0,
                 "content": "hello",
                 "beg_pos": 0,
                 "index": 0,
