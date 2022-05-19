@@ -8,7 +8,7 @@
 @Description: Read Yaml file to configration file
 """
 import json
-# import yaml
+import yaml
 from Source.constant import CONFIG_FILE_PATH
 
 
@@ -34,9 +34,9 @@ class YamlFileReader(object):
         if file_path.endswith(".json"):
             with open(file=file_path, mode='r', encoding='utf-8') as json_file:
                 yaml_obj = json.load(json_file)
-        # else:
-        #     with open(file=file_path, mode='r', encoding='utf-8') as yaml_file:
-        #         yaml_obj = yaml.load(yaml_file, Loader=yaml.FullLoader)
+        else:
+            with open(file=file_path, mode='r', encoding='utf-8') as yaml_file:
+                yaml_obj = yaml.load(yaml_file, Loader=yaml.FullLoader)
         self.yaml_model = dict2obj(dict_param=yaml_obj)
 
     def create_json(self) -> dict:
